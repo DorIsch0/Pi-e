@@ -25,7 +25,7 @@ Another change to the language standard was made, but it is something almost eve
 So with all that being said, we can finally move on to writing the code. If you want a detailed explanation of it, see extras/pi_explained.txt.
 
 ## Does it actually work?
-The program does definetly work, although being relatively slow, at least for large values of "fifty grams of butter". The cake works too, although being really tideous to make, because you have to insert most of the ingredients in really small amounts really often, sometimes multiple times in a row. For some impressions of the process, look at extras/cake_making.md.
+The program does definetly work, although being relatively slow, at least for large values of "fifty grams of butter". The cake works too, although being really tideous to make, because you have to insert most of the ingredients in really small amounts really often, sometimes multiple times in a row. For some impressions of the process, look at extras/pie_making.md.
 
 ## Takeaways
 Chef is not a good language.
