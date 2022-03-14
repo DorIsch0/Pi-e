@@ -1,0 +1,116 @@
+Pi(e).                                                      
+                                                            
+--- in the original there are some comments here ---        
+                                                            
+Ingredients.                                                ingredients are variables in Chef
+9 fifty grams of butter                                     side length of the square
+5 grain of sugar                                            x-position in loop through all small squares
+5 drop of water                                             y-position ...
+9 fifty grams of sugar                                      holds x^2+y^2 for some x- and y-position in the square at the beginning, later it holds the sidelength squared
+4 egg                                                       count of the small squares inside the quarter circle
+2 g wholemeal rye flour                                     constant: -1
+5 eight grams of cacao                                      control variable for the sqaure root algorithm
+16 g baking powder                                          number of iterations for the square root algorithm: 16
+4 onehundrettwentyfive grams of low-fat curd                
+1 l soap water                                              constant: 1
+1 mixer                                                     constant: 1
+2 twohundret grams of wheat flour                           
+8 g wholemeal spelt flour                                   temporary variable
+2 hands                                                     constant: 2
+1 vanilla sugar                                             
+1 vanilla custard powder                                    constant: 1
+0 g nothing                                                 approximation for the square root
+0 a third of the dough                                      only needed for actually baking
+0 left over dough                                           only needed for actually baking
+1 powdered sugar                                            only needed for actually baking
+                                                            
+Cooking time: 1 hour.                                       acts as comment
+Pre-heat oven to 200 degrees Celcius.                       acts as comment
+                                                            
+Method.                                                     The algorithm:
+Put soap water into mixing bowl.                            We first set up some constants and variables.
+Remove soap water from mixing bowl.                         Now theres 0 in the mixing bowl
+Fold wholemeal spelt flour into mixing bowl.                which gets stored in wholemeal spelt flour
+Put wholemeal spelt flour into mixing bowl.                 
+Fold egg into mixing bowl.                                  and in egg.
+Put wholemeal spelt flour into mixing bowl.                 Again, 0 in the mixing bowl,
+Mix well.                                                   this does nothing,
+Remove mixer from mixing bowl.                              now there's -1 in the MB,
+Fold wholemeal rye flour into mixing bowl.                  which gets stored into wholemeal rye flour.
+Take fifty grams of butter from refrigerator.               We store the desired sidelength of our square into fifty grams of butter
+Put fifty grams of butter into mixing bowl.                 and put it into the MB.
+Fold grain of sugar into mixing bowl.                       Now we initialise the x position at the end of the side of the square
+Insert the grain of sugar.                                  and start a loop where it gets decremented in every iteration.
+Put fifty grams of butter into mixing bowl.                 We do the same thing with the y position.
+Fold drop of water into mixing bowl.                        
+Insert the drop of water.                                   
+Put grain of sugar into mixing bowl.                        Now we take our x position
+Combine grain of sugar into mixing bowl.                    and square it,
+Put drop of water into mixing bowl.                         take our y position
+Combine drop of water into mixing bowl.                     and square it,
+Fold eight grams of cacao into mixing bowl.                 store the result of the latter in eight grams of cacao
+Add eight grams of cacao to mixing bowl.                    and add that to the square of x.
+Stir fifty grams of butter into the mixing bowl.            (This line is only needed for actually baking and does noting.)
+Fold fifty grams of sugar into mixing bowl.                 So the result of that - x^2+y^2 - is stored in our sugar. In a moment, we want to get the square root of it.
+Put wholemeal spelt flour into mixing bowl.                 We now need to handle the case of x^2+y^2=0, because the division later will otherwise break the program. We first put it into the MB
+Insert the fifty grams of sugar.                            and now test if it's zero.
+Fold wholemeal spelt flour into mixing bowl.                 If it isn't, we may continue to take the square root, so we remove the zero value from the MB again.
+Put twohundret grams of wheat flour into mixing bowl.        We will need the constant 2 in a second.
+Put baking powder into mixing bowl.                          First we put the number of iterations into the MB
+Fold eight grams of cacao into mixing bowl.                  and set the control variable to its value.
+Insert the eight grams of cacao.                             We then initiate the loop.
+Fold nothing into mixing bowl.                                Now we set our square root approximation to two. This is arbitrary.
+Put fifty grams of sugar into mixing bowl.                    We put x^2+y^2 into the MB
+Divide nothing into mixing bowl.                              and divide it by our approximation.
+Add nothing to mixing bowl.                                   We add the approximation
+Divide twohundret grams of wheat flour into mixing bowl.      and divide the result by two to get the average.
+Insert the eight grams of cacao until inserted.              End of the loop, the control variable gets decremented until it's zero.
+Put wholemeal spelt flour into mixing bowl.                  We put zero into the MB
+Fold fifty grams of sugar into mixing bowl.                  and set sugar to it
+Do until inserted.                                          to break the loop (because it was never intended to be a loop, but rather an if-Statement).
+Fold nothing into mixing bowl.                              The effect of this line depends on the "if" above: if x^2+y^2 was zero, then our approximation to the difference of the square from the (0,0)-corner correctly gets set to zero. If it wasn't, it gets set to the last approximation we produced in the loop above.
+Put nothing into mixing bowl.                               Now we put our approximation into the MB.
+Combine wholemeal rye flour into mixing bowl.               We multiply it by -1
+Add fifty grams of butter to mixing bowl.                   and add the sidelength to get the difference.
+Fold nothing into mixing bowl.                              We store the result in "nothing".
+Do the nothing.                                             If the difference is positive, meaning that the small square we are working on in the moment has a distance less than the sidelength from the corner, we execute the following lines, which increment the counter, else we skip them.
+Put egg into 2nd mixing bowl.                               We put the counter in the MB,
+Add vanilla custard powder to 2nd mixing bowl.              add one
+Fold egg into 2nd mixing bowl.                              and store the result back into the counter.
+Set aside.                                                  This breaks the loop (which again is an if-statement).
+Proceed until doed.                                         End of the if.
+Put hands into mixing bowl.                                 The following lines are only needed for actual cooking. We need something in the MB, so we put 2 in,
+Mix well.                                                   do nothing
+Remove hands from mixing bowl.                              and remove it again, so now there's 0 in it,
+Remove a third of the dough from mixing bowl.               and now we can remove the dough
+Put a third of the dough into 3rd mixing bowl.              and put it in the other MB, which we will never need in our program, but very much in actual cooking.
+Fold wholemeal spelt flour into mixing bowl.                Remove the stuff in the MB
+Pour contents of the mixing bowl into the baking dish.      so we can pour it into the BD without printing something we don't want.
+Fold wholemeal spelt flour into 3rd mixing bowl.            Do the same thing with the 3rd MB.
+Put vanilla sugar into 2nd mixing bowl.                     We need those ingredients when actually cooking, so we put one in
+Fold vanilla custard powder into 2nd mixing bowl.           and remove it instantly.
+Insert the drop of water until inserted.                    End of the loops through x- and y-positions. The corresponding variables get decremented.
+Insert the grain of sugar until inserted.                   
+Put fifty grams of butter into 2nd mixing bowl.             Only needed for actually cooking: into the MB,
+Stir fifty grams of butter into the 2nd mixing bowl.        nothing,
+Fold fifty grams of butter into 2nd mixing bowl.            out of the MB.
+Put fifty grams of butter into 2nd mixing bowl.             Now we put the sidelength in
+Combine fifty grams of butter into 2nd mixing bowl.         and multiply it by itself to get the number of small squares.
+Fold fifty grams of sugar into 2nd mixing bowl.             We store the result in the sugar variable.
+Put fifty grams of sugar into 2nd mixing bowl.              Only needed for actually cooking: into the MB,
+Stir fifty grams of sugar into the 2nd mixing bowl.         nothing,
+Fold fifty grams of sugar into 2nd mixing bowl.             out of the MB.
+Put egg into 2nd mixing bowl.                                               Put the counter in
+Combine onehundrettwentyfive grams of low-fat curd into 2nd mixing bowl.    and multiply it by four.
+Put onehundrettwentyfive grams of low-fat curd into 2nd mixing bowl.        Only needed for actually cooking: into the MB,
+Fold onehundrettwentyfive grams of low-fat curd into 2nd mixing bowl.       nothing,
+Stir onehundrettwentyfive grams of low-fat curd into the 2nd mixing bowl.   out of the MB.
+Divide fifty grams of sugar into 2nd mixing bowl.           At this point we have 4*the counter in the MB and divide it by the sidelength squared. The result already is our final approximation for pi.
+Stir the 2nd mixing bowl for 1 minute.                      Does nothing.
+Pour contents of the 2nd mixing bowl into the baking dish.  Prepare the approximation for being printed out.
+Chop_up the left over dough.                                Does nothing.
+Do until chop_uped.                                         Does nothing.
+Pour contents of the 3rd mixing bowl into the baking dish.  Does nothing.
+Serves 5.                                                   Finally, print it.
+Sprinkle the powdered sugar.                                The rest is only needed for actually cooking and does nothing.
+Do until sprinkled.                                         
